@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Univerzální sekce */
+.section {
+    padding: 60px 0;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #667eea;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.projects {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
