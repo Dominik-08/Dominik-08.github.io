@@ -1,10 +1,9 @@
- body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-}
-
+body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #667eea, #764ba2);
+        margin: 0;
+        color: #333;
+    }
     header {
         text-align: center;
         padding: 40px 20px;
@@ -63,4 +62,5 @@
         color: white;
 
     }
+
 
