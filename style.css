@@ -109,5 +109,21 @@ footer {
     padding: 30px;
     margin-top: 60px;
 }
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .projects-grid {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+}
 
 
