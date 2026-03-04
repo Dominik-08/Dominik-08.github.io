@@ -37,6 +37,45 @@ body {
     margin-bottom: 35px;
     opacity: 0.9;
 }
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #4c6ef5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #364fc7;
+}
 
 /* TLAČÍTKO */
 .btn {
@@ -125,5 +164,6 @@ footer {
     }
 
 }
+
 
 
