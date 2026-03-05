@@ -119,25 +119,29 @@ h3 {
     margin: 5px;
 }
 
-/* GRID PROJEKTŮ */
+.projects {
+    padding: 80px 20px;
+    text-align: center;
+}
+
 .projects-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
 
-/* KARTA */
 .project-card {
     background: white;
     padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
@@ -164,6 +168,17 @@ footer {
     }
 
 }
+@media (max-width: 900px) {
 
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+}
+@media (max-width: 600px) {
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
