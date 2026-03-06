@@ -17,6 +17,13 @@
             <li><a href="#projects">Projekty</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
+        
+         <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
     </div>
 </nav>
     <!-- HERO -->
@@ -109,7 +116,18 @@
     </form>
 
 </section>
+    <script>
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
 </body>
 </html>
+
 
 
