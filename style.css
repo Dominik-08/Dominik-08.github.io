@@ -189,8 +189,6 @@ footer {
     .hamburger {
         display: flex;
     }
-
-}
 }
 @media (max-width: 900px) {
 
@@ -273,6 +271,7 @@ footer {
 .contact button:hover {
     background: #364fc7;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -285,6 +284,7 @@ footer {
     height: 3px;
     background: black;
 }
+
 
 
 
