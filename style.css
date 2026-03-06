@@ -4,7 +4,7 @@ html {
 /* RESET A ZÁKLAD */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background: #f9fafc;
     color: #1f2937;
 }
@@ -252,4 +252,5 @@ footer {
 .contact button:hover {
     background: #364fc7;
 }
+
 
