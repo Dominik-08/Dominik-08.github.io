@@ -185,6 +185,30 @@ footer {
     }
 
 }
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 200px;
+
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
 .navbar {
     position: sticky;
     top: 0;
@@ -251,6 +275,18 @@ footer {
 
 .contact button:hover {
     background: #364fc7;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
 }
 
 
