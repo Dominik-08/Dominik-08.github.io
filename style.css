@@ -189,10 +189,10 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 40px;
+        top: 80px;
         right: 0;
         background: white;
-        width: 150px;
+        width: 200px;
 
         flex-direction: column;
         align-items: center;
@@ -288,6 +288,7 @@ footer {
     height: 3px;
     background: black;
 }
+
 
 
 
