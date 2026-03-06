@@ -219,3 +219,37 @@ footer {
 .nav-links a:hover {
     color: #1f3f58;
 }
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 12px;
+    background: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #364fc7;
+}
