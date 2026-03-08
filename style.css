@@ -270,19 +270,6 @@ footer {
 .contact button:hover {
     background: #364fc7;
 }
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: black;
-}
 .todo {
     text-align: center;
     padding: 50px 10px;
@@ -307,3 +294,4 @@ footer {
 #taskList li {
     margin: 10px;
 }
+
