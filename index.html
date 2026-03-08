@@ -98,8 +98,18 @@
 
             </div>
         </div>
-    </section>
+ </section>
+    <section class="todo">
 
+    <h2>Mini aplikace – To Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Napiš úkol...">
+
+    <button onclick="addTask()">Přidat</button>
+
+    <ul id="taskList"></ul>
+
+</section>
     <!-- FOOTER -->
     <footer>
         © 2026 Dominik
@@ -125,18 +135,28 @@
 
 </section>
     
-<script>
+    <script>
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+function addTask(){
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+    const input = document.getElementById("taskInput");
+    const task = input.value;
 
-</script>
+    if(task === "") return;
+
+    const li = document.createElement("li");
+    li.textContent = task;
+
+    const list = document.getElementById("taskList");
+    list.appendChild(li);
+
+    input.value = "";
+
+}
+</stript>
 </body>
 </html>
+
 
 
 
