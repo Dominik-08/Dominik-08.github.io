@@ -49,8 +49,9 @@ body {
     background-position: center;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 
     text-align: center;
     color: white;
@@ -183,11 +184,9 @@ footer {
 
     .nav-links.active {
         display: flex;
+        gap: 20px;
     }
 
-    .hamburger {
-        display: flex;
-    }
 }
 @media (max-width: 900px) {
 
@@ -335,5 +334,6 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
