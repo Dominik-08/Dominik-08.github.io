@@ -176,6 +176,7 @@ footer {
         background: white;
         width: 200px;
         padding: 20px 30px;
+        margin: 0;
 
         flex-direction: row;
         align-items: center;
@@ -330,6 +331,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
