@@ -170,7 +170,7 @@ footer {
         font-size: 18px;
     }
 .nav-links {
-        position: absolute;
+        position: row;
         top: 70px;
         right: 0;
         background: white;
@@ -329,6 +329,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
