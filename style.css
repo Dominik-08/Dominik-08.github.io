@@ -176,7 +176,7 @@ footer {
         background: white;
         width: 200px;
 
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
         display: none;
@@ -334,6 +334,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
