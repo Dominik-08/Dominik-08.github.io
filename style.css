@@ -159,7 +159,7 @@ footer {
 @media (max-width: 768px) {
 
     .projects-grid {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .hero h1 {
@@ -334,6 +334,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
