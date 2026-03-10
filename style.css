@@ -170,19 +170,21 @@ footer {
         font-size: 18px;
     }
 .nav-links {
-        position: row;
+        position: absolute;
         top: 70px;
         right: 0;
         background: white;
         width: 200px;
-        padding: 20px 30px;
-        margin: 0;
 
         flex-direction: row;
         align-items: center;
 
+        display: none;
     }
 
+    .nav-links.active {
+        display: flex;
+    }
 }
 @media (max-width: 900px) {
 
@@ -330,6 +332,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
