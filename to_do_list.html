@@ -11,40 +11,6 @@
 <p>Toto je stránka o To Do Listu.</p>
 
 <a href="index.html">Zpět na portfolio</a>
-<section id="contact" class="contact">
-    <h2>Kontakt</h2>
-
-    <form action="https://formspree.io/f/mgonelgl" method="POST">
-
-        <input type="text" name="name" placeholder="Tvoje jméno" required>
-
-        <input type="email" name="email" placeholder="Tvůj email" required>
-
-        <textarea name="message" placeholder="Tvoje zpráva"></textarea>
-
-        <button type="submit">Odeslat</button>
-
-    </form>
-<section id="contact">
-</section>
-<script>
-
-function addTask(){
-
-    const input = document.getElementById("taskInput");
-    const task = input.value;
-
-    if(task === "") return;
-
-    const li = document.createElement("li");
-    li.textContent = task;
-
-    const list = document.getElementById("taskList");
-    list.appendChild(li);
-
-    input.value = "";
-
-}
-</script>
 </body>
 </html>
+
