@@ -21,7 +21,28 @@
     <ul id="taskList"></ul>
 
 </section>
+   <script>
+
+function addTask(){
+
+    const input = document.getElementById("taskInput");
+    const task = input.value;
+
+    if(task === "") return;
+
+    const li = document.createElement("li");
+    li.textContent = task;
+
+    const list = document.getElementById("taskList");
+    list.appendChild(li);
+
+    input.value = "";
+
+}
+
+</script>
 </body>
 </html>
+
 
 
