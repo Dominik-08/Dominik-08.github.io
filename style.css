@@ -187,10 +187,6 @@ footer {
     .nav-links.active {
         display: flex;
     }
-
-    .hamburger {
-        display: flex;
-    }
 }
 @media (max-width: 900px) {
 
@@ -338,6 +334,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 
 
 
