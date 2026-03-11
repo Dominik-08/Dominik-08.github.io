@@ -340,6 +340,13 @@ footer {
   gap: 30px;
 }
 
+.kavarna-page {
+    background-color: #fff8f0;
+}
+
+.kavarna-page h1 {
+    color: brown;
+}
 
 
 
