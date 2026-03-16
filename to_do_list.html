@@ -4,16 +4,10 @@
 <title>To Do List</title>
    <link rel="stylesheet" href="to_do_list.css">
 </head>
-
 <body>
+<section class="todo">
 
-<h1>To Do List</h1>
-
-<p>Toto je stránka o To Do Listu.</p>
-<a href="index.html">Zpět na portfolio</a>
-   <section class="todo">
-
-    <h2>Mini aplikace – To Do List</h2>
+    <h2>Moje To-Do</h2>
 
     <input type="text" id="taskInput" placeholder="Napiš úkol...">
 
@@ -24,18 +18,21 @@
 </section>
    <script>
 
-function addTask(){
+function addTask() {
 
-    const input = document.getElementById("taskInput");
-    const task = input.value;
+    let input = document.getElementById("taskInput");
+    let task = input.value;
 
-    if(task === "") return;
+    if (task === "") return;
 
-    const li = document.createElement("li");
+    let li = document.createElement("li");
     li.textContent = task;
 
-    const list = document.getElementById("taskList");
-    list.appendChild(li);
+    li.onclick = function() {
+        li.style.textDecoration = "line-through";
+    };
+
+    document.getElementById("taskList").appendChild(li);
 
     input.value = "";
 
