@@ -31,76 +31,19 @@ p {
     padding: 0;
     margin-top: 20px;
 }
+.todo li {
+    background: #f4f4f4;
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
 
-<script>
-
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-function renderTasks() {
-
-    let list = document.getElementById("taskList");
-    list.innerHTML = "";
-
-    tasks.forEach((task, index) => {
-
-        let li = document.createElement("li");
-
-        let checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.checked = task.completed;
-
-        checkbox.onchange = function() {
-            tasks[index].completed = checkbox.checked;
-            saveTasks();
-        };
-
-        let span = document.createElement("span");
-        span.textContent = task.text;
-
-        if(task.completed){
-            span.classList.add("completed");
-        }
-
-        let deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "X";
-
-        deleteBtn.onclick = function() {
-            tasks.splice(index,1);
-            saveTasks();
-        };
-
-        li.appendChild(checkbox);
-        li.appendChild(span);
-        li.appendChild(deleteBtn);
-
-        list.appendChild(li);
-
-    });
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-function addTask(){
-
-    let input = document.getElementById("taskInput");
-
-    if(input.value === "") return;
-
-    tasks.push({
-        text: input.value,
-        completed: false
-    });
-
-    input.value = "";
-
-    saveTasks();
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
 }
-
-function saveTasks(){
-
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-    renderTasks();
-
-}
-
-renderTasks();
-
-</script>
