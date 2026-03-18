@@ -5,11 +5,12 @@ body {
 h1 {
     color: black;
     padding: 40px;
+    font-size: 50;
 }
 
 p {
     color: #333;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 .todo {
