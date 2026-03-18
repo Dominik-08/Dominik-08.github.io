@@ -1,9 +1,10 @@
 body {
-    background: linear-gradient(to right, #6f09ce, #5da4eb);
+    background: linear-gradient(to right, #6d0aca, #408cd8);
 }
 
 h1 {
     color: black;
+    padding: 40px;
 }
 
 p {
