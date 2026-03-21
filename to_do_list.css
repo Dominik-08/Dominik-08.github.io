@@ -42,7 +42,7 @@ p {
     width: 300px;
     border-radius: 8px;
 
-    display: center;
+    display: flex-start;
     justify-content: flex-start;
     align-items: center;
 }
