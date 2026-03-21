@@ -37,7 +37,7 @@ p {
 }
 .todo li {
     background: #f4f4f4;
-    margin: 0;
+    margin: 10px, auto;
     padding: 20px;
     width: 300px;
     border-radius: 8px;
